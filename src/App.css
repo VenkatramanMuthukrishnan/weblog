@@ -137,13 +137,13 @@ display: block !important;
 }
 
 .custom_tool_div{
-  display: flex;
-  align-items: center;
+  /* display: flex; */
+  /* align-items: center; */
 }
 
-.right_tools{
+/* .right_tools{
   flex-grow: 1;
   padding: 4px;
   border: 1px solid #ccc;
     box-sizing: border-box;
-}
+} */

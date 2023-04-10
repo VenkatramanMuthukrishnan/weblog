@@ -360,6 +360,7 @@ export const QuillToolbar = (props) => {
     <span className="ql-formats">
       <button className=" trigger ql-youtubeEmbedBlot"
         // onClick={handleYoutubeEmbed} 
+        disabled={!props.selectedText}
        onClick={() => props.setCollapsed(!props.collapsed)}>
         <CustomToolTipWithImage />
       </button>
