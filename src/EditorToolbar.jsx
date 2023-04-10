@@ -165,7 +165,7 @@ const insertBlock=(id,text,inputRef,secondPageOp)=>{
       src="${secondPageOp.base64Image||null}"
       alt="Image"
     />
-    <p>This is an example tooltip with an image and some text.</p>
+    <p>${secondPageOp.text}</p>
   </span> ` });
   }
   // inputRef.current.editor.deleteText(cursorPosition+text.length-1,1)
