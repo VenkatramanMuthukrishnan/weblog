@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 // import { Quill } from "react-quill";
 import * as Quill from 'quill';
 
 // import { EmbedBlot } from 'parchment/dist/src/blot/embed';
 import katex from "katex";
 import "katex/dist/katex.min.css";
+import { Button } from "antd";
 
 window.katex = katex;
 
@@ -279,6 +280,16 @@ export const QuillToolbar = (props) => {
    insertBlock(id,props.selectedText,props.inputRef,props.secondPageOp||{});
   }
 
+  useEffect(()=>{
+    if(!!props.secondPageOp?.text){
+    var id=generateId();
+  //   var range = this.quill.getSelection();
+  
+  //  var text=  range ? this.quill.getText(range.index, range.length) : '';
+   insertBlock(id,props.selectedText,props.inputRef,props.secondPageOp||{});
+    }
+},[props.inputRef, props.secondPageOp, props.selectedText]);
+
   return (
   <div id="toolbar">
     <span className="ql-formats">
@@ -344,10 +355,14 @@ export const QuillToolbar = (props) => {
       </button>
     </span>
     <span className="ql-formats">
-      <button className="ql-youtubeEmbedBlot"  onClick={handleYoutubeEmbed}>
+      <button className=" trigger ql-youtubeEmbedBlot"
+        // onClick={handleYoutubeEmbed} 
+       onClick={() => props.setCollapsed(!props.collapsed)}>
         <CustomToolTipWithImage />
       </button>
     </span>
+    {/* <Button > Widget</Button> */}
+
   </div>
 );
 }

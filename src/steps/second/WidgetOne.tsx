@@ -91,7 +91,7 @@ const WidgetOne: React.FC<any> = (props:any) => {
       <>
       <TextArea rows={4} placeholder="maxLength is 6" maxLength={6}  onChange={(e:any)=>{props.setText(e.target.value);
   }}/>
-      <Upload onChange={handleUpload}>
+      <Upload onChange={handleUpload} beforeUpload={() => false}>
       {props.base64Image ? (
         <img src={props.base64Image} alt="Uploaded image" style={{ maxWidth: '100%' }} />
       ) : (
