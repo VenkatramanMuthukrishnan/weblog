@@ -55,20 +55,6 @@ html, body, #root, #root>div {
     display: none;
   }
 
-  /* .ant-layout-sider-trigger{
-    position: absolute !important;
-    left: 0;
-    top: 50% !important;
-    width: 50% !important;
-    height: 50% !important;
-  } */
-
-  /* .child-row {
-    display: flex;
-    flex-direction: row;
-  } */
-
-
 
 
   .tooltip {
@@ -135,15 +121,3 @@ html, body, #root, #root>div {
 .site-layout .ant-layout-content{
 display: block !important;
 }
-
-.custom_tool_div{
-  /* display: flex; */
-  /* align-items: center; */
-}
-
-/* .right_tools{
-  flex-grow: 1;
-  padding: 4px;
-  border: 1px solid #ccc;
-    box-sizing: border-box;
-} */

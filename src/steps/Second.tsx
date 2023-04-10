@@ -1,7 +1,6 @@
-import React, { useState } from 'react';
-import type { RadioChangeEvent } from 'antd';
-import { Radio } from 'antd';
+import React from 'react';
 import WidgetOne from './second/WidgetOne';
+import WidgetDefault from './second/WidgetDefault';
 
 
 const Second: React.FC<any> = (props:any) => {
@@ -10,7 +9,7 @@ const Second: React.FC<any> = (props:any) => {
        case 1:
          return <WidgetOne onFinish={props.setOp} {...props}/>;
          default:
-           return <div>No option selected</div>;
+           return <WidgetDefault/>;
    }
  }
   return getSecond(props.value);
