@@ -165,7 +165,7 @@ const insertBlock=(id,text,inputRef,secondPageOp)=>{
       src="${secondPageOp.base64Image||null}"
       alt="Image"
     />
-    <p>${secondPageOp.text}</p>
+    ${secondPageOp.text}
   </span> ` });
   }
   // inputRef.current.editor.deleteText(cursorPosition+text.length-1,1)
