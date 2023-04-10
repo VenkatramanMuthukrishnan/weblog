@@ -44,3 +44,18 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+
+  'blots/block': _block2.default,
+  'blots/block/embed': _block.BlockEmbed,
+  'blots/break': _break2.default,
+  'blots/container': _container2.default,
+  'blots/cursor': _cursor2.default,
+  'blots/embed': _embed2.default,
+  'blots/inline': _inline2.default,
+  'blots/scroll': _scroll2.default,
+  'blots/text': _text2.default,
+
+  'modules/clipboard': _clipboard2.default,
+  'modules/history': _history2.default,
+  'modules/keyboard': _keyboard2.default
