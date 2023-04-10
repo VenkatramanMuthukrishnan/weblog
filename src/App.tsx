@@ -124,7 +124,7 @@ const Editor = () => {
               
               <p>Current selection index: ${selectedText}</p>
               <div className="custom_tool_div">
-              <EditorToolbar handleOpen={handleOpen} selectedText={selectedText}  inputRef={inputRef} secondPageOp={secondPageOp} collapsed={collapsed} setCollapsed={setCollapsed}/>
+              <EditorToolbar handleOpen={handleOpen} selectedText={selectedText}  inputRef={inputRef} secondPageOp={secondPageOp} collapsed={collapsed} setCollapsed={setCollapsed}  setSecondPageOp={setSecondPageOp}/>
               {/* <div className="right_tools">
               <Button type="primary" className="trigger" onClick={() => setCollapsed(!collapsed)}> Widget</Button>
              </div> */}

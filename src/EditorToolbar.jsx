@@ -287,8 +287,11 @@ export const QuillToolbar = (props) => {
   
   //  var text=  range ? this.quill.getText(range.index, range.length) : '';
    insertBlock(id,props.selectedText,props.inputRef,props.secondPageOp||{});
+   props.setSecondPageOp({})
+   props.setCollapsed(!props.collapsed);
     }
-},[props.inputRef, props.secondPageOp, props.selectedText]);
+// eslint-disable-next-line react-hooks/exhaustive-deps
+},[ props.secondPageOp]);
 
   return (
   <div id="toolbar">
